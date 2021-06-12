@@ -26,6 +26,8 @@ update () {
         "\n[Install]\nWantedBy=default.target") > /etc/systemd/system/snapshot.path
 
     echo -e "[Unit]\nDescription=Backs up files\n\n[Service]\nExecStart=/usr/bin/snapshot service" > /etc/systemd/system/snapshot.service
+    systemctl daemon-reload
+    systemctl start snapshot.path
 }
 
 if [ "$1" = "update" ]

@@ -1,5 +1,5 @@
 # Snapshot
-A utility for enabling snapshot backups on *nix systems.
+A utility for enabling snapshot backups on \*nix systems.
 
 # Usage
 
