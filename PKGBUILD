@@ -8,8 +8,8 @@ url='https://github.com/RyanBruno/Snapshot'
 license=('GPL')
 depends=('rsync')
 backup=('etc/snapshot/config')
-source=('https://github.com/RyanBruno/Snapshot/releases/download/0.0.1/snapshot-0.0.1.tar.gz'
-        'https://github.com/RyanBruno/Snapshot/releases/download/0.0.1/snapshot-0.0.1.tar.gz.gpg')
+source=(https://github.com/RyanBruno/Snapshot/releases/download/${pkgver}/${pkgname}-${pkgver}.tar.gz
+        https://github.com/RyanBruno/Snapshot/releases/download/${pkgver}/${pkgname}-${pkgver}.tar.gz.gpg)
 #source=(snapshot config)
 sha256sums=('4f982d406df1cae711b13896a1cf8bce3737be0153e59d9ed271808aa4c66055' 'SKIP')
 validpgpkeys=('915EBB9C9889E4AEB983CD96F15F942AA25D5A6A')
